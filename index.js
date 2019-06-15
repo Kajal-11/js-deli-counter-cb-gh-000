@@ -8,6 +8,6 @@ function nowServing(currentCustomer){
     return "There is nobody waiting to be served!";
   }
   else{
-    return currentCustomer.shift();
+    return `Currently serving ${currentCustomer.shift()}.`;
   }
 }
