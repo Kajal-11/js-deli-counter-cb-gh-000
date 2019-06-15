@@ -1,3 +1,8 @@
-function takeANumber(current, newCustomer){
-  return `Welcome, ${newCustomer}. You are number ${current.length + 1} in line.`;
+function takeANumber(currentCustomer, newCustomer){
+  var array = [];
+  for(let i=0 ; i < newCustomer.length; i++){
+  array.push(`Welcome, ${newCustomer[i]}. You are number ${currentCustomer.length + 1} in line.`);
+  currentCustomer.push(newCustomer[i]); 
+  }
+  return array;
 }
